@@ -5,7 +5,7 @@
 ## 运行方法
 
  1. 安装mongodb，打开一个命令行，输入mongod打开服务器
- 2. 运行getwebdata.py文件，会依次抓取房屋数据，写入数据库
+ 0. 运行getwebdata.py文件，会依次抓取房屋数据，写入数据库
  3. 在命令行输入以下命令保存数据到temp.csv
 
     `mongoexport -d housedb -c house_info --type=csv -f  
