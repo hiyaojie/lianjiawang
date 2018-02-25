@@ -10,7 +10,7 @@ house_infos=housedb["house_info"]
 
 start_url="https://sz.lianjia.com/ershoufang/"
 urls=["https://sz.lianjia.com/ershoufang/pg{}/"
-          .format(str(i)) for i in range(11,50)]
+          .format(str(i)) for i in range(1,101)]
 
 
 
@@ -64,17 +64,17 @@ def gethousedata(url):
         house_infos.insert_one(data)
         print("已爬取",house_infos.find().count(),"条数据！")
 
+#为防止重复写入数据库，执行完一次之后注释掉！
+for url in urls:
+     getwebsites(url)
 
-# for url in urls:
-#     getwebsites(url)
 
-
+#以下实现断点续传功能，程序中断后可以从未爬取的页面继续爬取！
 db_urls=[item["link"] for item in websites.find()]
 index_urls=[item["link"] for item in house_infos.find()]
 x=set(db_urls)
 y=set(index_urls)
 rest_of_urls=x-y
 
-# for item in rest_of_urls:
-#     gethousedata(item)
-gethousedata("https://sz.lianjia.com/ershoufang/105101186983.html")
+for item in rest_of_urls:
+     gethousedata(item)
