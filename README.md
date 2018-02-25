@@ -1,2 +1,3 @@
-# python
-get webdata by python
+# 爬虫功能
+爬取[链家网]()上深圳二手房数据，保存在mongodb数据中，并进行简单分析。
+#
