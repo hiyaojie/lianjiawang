@@ -26,6 +26,8 @@
  5. 挖掘小区名的信息
     1. 绘制前200个出现次数最多的字的词云
           ![小区名词云1](https://github.com/hiyaojie/python/raw/master/Rplot02.png)
+          
+          
     2. 出现次数前5都是后缀，故绘制6到200个出现次数最多的字的词云
           ![小区名词云2](https://github.com/hiyaojie/python/raw/master/Rplot03.png)
        
