@@ -47,7 +47,7 @@
 
 ![户型在售数量](https://github.com/hiyaojie/python/raw/master/imgs/Rplot04.png)
 
-#### 比较每种楼层在售房屋数量，并可视化展示
+#### 比较每种楼层在售房屋数量
 | 户型 | 在售数量 |
 | :-: | :-: |
 | 低楼层 | 416 |
@@ -55,6 +55,7 @@
 | 中楼层 | 482 |
 
 #### 分类汇总每个区房屋均价并可视化展示
+![户型在售数量](https://github.com/hiyaojie/python/raw/master/imgs/Rplot06.png)
 #### 挖掘小区名的信息
     1. 绘制前200个出现次数最多的字的词云
           ![小区名词云1](https://github.com/hiyaojie/python/raw/master/imgs/Rplot02.png)
