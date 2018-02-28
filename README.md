@@ -17,4 +17,12 @@
     `mongoexport -d housedb -c house_info --type=csv -f  
     id,decorate,link,last_time,price,name,square,total_price,
     location,direction,right,style,lift,stair -o G:\temp.csv`
-    
+    
+## 数据分析
+ 1. 比较每个区在售房屋数量，并可视化展示
+ 2. 比较每种户型在售房屋数量，并可视化展示
+ 3. 比较每种楼层在售房屋数量，并可视化展示
+ 4. 分类汇总每个区房屋均价并可视化展示
+ 5. 挖掘小区名的信息
+   1. 绘制前200个出现次数最多的字的词云
+   ![小区名词云](https://github.com/hiyaojie/python/raw/master/Rplot02.png)
