@@ -65,6 +65,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
 ```
 2. 为K-means选择最佳的K值 
 ![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot07.png) 
+
 选择K=5
 3. 执行聚类分析
 
@@ -77,10 +78,11 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## [1] 2 4 4 2 2 2
     ## Levels: 1 2 3 4 5
  4. 分析聚类结果
- 
-  1. 每类房房型分布
+   1. 每类房房型分布
+   
   ![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot08.png) 
-  2. 每类房的面积、价格
+  
+   2. 每类房的面积、价格
 
     ##   cluster price.mean square.mean total_price.mean time2now.mean
     ## 1       1   89850.89   123.23794        1095.5714      13.19841
@@ -89,7 +91,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## 4       4   64652.74    75.48422         483.9787      12.42022
     ## 5       5   53835.40   158.97449         842.8571      12.43537
 
-  3. 每类房的数量
+   3. 每类房的数量
     ## 
     ##   1   2   3   4   5 
     ## 126 518  58 445 147
