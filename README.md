@@ -78,6 +78,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## [1] 2 4 4 2 2 2
     ## Levels: 1 2 3 4 5
  4. 分析聚类结果
+ 
    1. 每类房房型分布
    
   ![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot08.png) 
@@ -92,6 +93,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## 5       5   53835.40   158.97449         842.8571      12.43537
 
    3. 每类房的数量
+   
     ## 
     ##   1   2   3   4   5 
     ## 126 518  58 445 147
