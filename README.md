@@ -80,21 +80,31 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## Levels: 1 2 3 4 5
  4. 分析聚类结果
  
-    1. 每类房房型分布
-    
-       ![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot08.png) 
-    
-    2. 每类房的面积、价格
-        ##   cluster price.mean square.mean total_price.mean time2now.mean
-        ## 1       1   89850.89   123.23794        1095.5714      13.19841
-        ## 2       2   43502.05    79.63481         346.2278      13.96139
-        ## 3       3  111692.03   214.94138        2417.8086      10.62069
-        ## 4       4   64652.74    75.48422         483.9787      12.42022
-        ## 5       5   53835.40   158.97449         842.8571      12.43537
-    3. 每类房的数量
-        ##   1   2   3   4   5 
-        ## 126 518  58 445 147
-        
+i.  每类房房型分布
+
+![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot08.png) 
+
+ii.  每类房的面积、价格
+
+``` r
+  summaryBy(price+square+total_price+time2now~cluster,data = house_info,FUN = mean)
+```
+
+    ##   cluster price.mean square.mean total_price.mean time2now.mean
+    ## 1       1   89850.89   123.23794        1095.5714      13.19841
+    ## 2       2   43502.05    79.63481         346.2278      13.96139
+    ## 3       3  111692.03   214.94138        2417.8086      10.62069
+    ## 4       4   64652.74    75.48422         483.9787      12.42022
+    ## 5       5   53835.40   158.97449         842.8571      12.43537
+
+iii.  每类房的数量
+``` r
+  table(house_info$cluster)
+```
+    ## 
+    ##   1   2   3   4   5 
+    ## 126 518  58 445 147
+
     观察每1类的特征可以发现：
 
     第一类：年代较久（平均年龄在13年以上）的“豪宅”，主要分布在南山、福田，面积中等，均价较高；数量126
