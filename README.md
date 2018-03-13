@@ -54,6 +54,10 @@
 | 高楼层 | 396 |
 | 中楼层 | 482 |
 
+#### 分类汇总每个区房屋均价并可视化展示
+
+![户型在售数量](https://github.com/hiyaojie/python/raw/master/imgs/Rplot06.png)
+
 #### 聚类分析
  1.  选择变量集
 ``` r
@@ -73,6 +77,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     ## [1] 2 4 4 2 2 2
     ## Levels: 1 2 3 4 5
  4. 分析聚类结果
+ 
   1. 每类房房型分布
   ![](https://github.com/hiyaojie/python/raw/master/imgs/Rplot08.png) 
   2. 每类房的面积、价格
@@ -97,8 +102,7 @@ standrad <- data.frame(scale(house_info[,c('square','price','total_price')]))
     第四类：平民房，面积和年龄教经济房相差不打，但是地段更好，主要在福田、南山、宝安；数量445
     第五类：平民大房，面积较平民房更大，龙岗最多，盐田最少，其他区较均匀，有趣的是房子越大，每平米均价越少；数量147
 
-#### 分类汇总每个区房屋均价并可视化展示
-![户型在售数量](https://github.com/hiyaojie/python/raw/master/imgs/Rplot06.png)
+
 #### 挖掘小区名的信息
     1. 绘制前200个出现次数最多的字的词云
           ![小区名词云1](https://github.com/hiyaojie/python/raw/master/imgs/Rplot02.png)
